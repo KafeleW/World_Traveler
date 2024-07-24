@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'traveler_classes.dart';
 
-class CountryReviews extends StatefulWidget {
-  const CountryReviews({super.key});
+class CountryPageDetails extends StatefulWidget {
+  const CountryPageDetails({super.key});
 
   @override
-  State<CountryReviews> createState() => _CountryReviewsState();
+  State<CountryPageDetails> createState() => _CountryPageDetailsState();
 }
 
-class _CountryReviewsState extends State<CountryReviews> {
+class _CountryPageDetailsState extends State<CountryPageDetails> {
   List<CountryListDetails> countryListDetails = [
     CountryListDetails(country: 'Italy', flag: 'italy.png'),
     CountryListDetails(country: 'Greece', flag: 'greece.png'),
@@ -22,6 +22,7 @@ class _CountryReviewsState extends State<CountryReviews> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView.builder(
+        // itemCount and index work together similar to a for loop, iterating through countryListDetails list to display each list value in ListTile format
         itemCount: countryListDetails.length,
         itemBuilder: (context, index) {
           return Card(

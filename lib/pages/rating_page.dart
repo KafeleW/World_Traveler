@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'traveler_classes.dart';
 
-class RatingDetails extends StatefulWidget {
-  const RatingDetails({super.key});
+class RatingPageDetails extends StatefulWidget {
+  const RatingPageDetails({super.key});
 
   @override
-  State<RatingDetails> createState() => _RatingDetailsState();
+  State<RatingPageDetails> createState() => _RatingPageDetailsState();
 }
 
-class _RatingDetailsState extends State<RatingDetails> {
+class _RatingPageDetailsState extends State<RatingPageDetails> {
   List<RatingListDetails> ratingListDetails = [
     RatingListDetails(rating: 'Food', icon: Icons.fastfood),
     RatingListDetails(rating: 'Shopping', icon: Icons.shopping_bag_rounded),

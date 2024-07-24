@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:world_traveler/pages/home.dart';
-import 'package:world_traveler/pages/rating.dart';
-import 'package:world_traveler/pages/review.dart';
+import 'package:world_traveler/pages/home_page.dart';
+import 'package:world_traveler/pages/rating_page.dart';
+import 'package:world_traveler/pages/review_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,8 +40,8 @@ class _HomePageState extends State<HomePage> {
   int index = 0;
   final screens = [
     const HomePageDetails(),
-    const RatingDetails(),
-    const CountryReviews(),
+    const RatingPageDetails(),
+    const CountryPageDetails(),
   ];
 
   @override
