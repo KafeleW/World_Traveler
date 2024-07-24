@@ -8,7 +8,7 @@ class HomePageDetails extends StatelessWidget {
     return const Scaffold(
       body: Center(
         child: Text(
-          "Welcome to Kafele's Traveler Reviews! Thanks for stopping by and reading through my reviews of various countries I have had the opportunity to travel to over the years",
+          "Welcome to Kafele's Traveler Reviews!! Thanks for stopping by and reading through my reviews of various countries I have had the opportunity to travel to over the years",
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
