@@ -51,7 +51,11 @@ class _HomePageState extends State<HomePage> {
         title: const Center(child: Text("Kafele's Traveler Reviews")),
         backgroundColor: Theme.of(context).primaryColor,
       ),
-      body: screens[index],
+      // Maintain state of each page widgets
+      body: IndexedStack(
+        index: index,
+        children: screens,
+      ),
       bottomNavigationBar: NavigationBarTheme(
         data: NavigationBarThemeData(
           indicatorColor: Theme.of(context).primaryColor,
