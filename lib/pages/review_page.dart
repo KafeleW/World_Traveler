@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 import 'traveler_classes.dart';
+import 'country_review/italy_review.dart';
+import 'country_review/greece_review.dart';
+import 'country_review/japan_review.dart';
+import 'country_review/morocco_review.dart';
+import 'country_review/spain_review.dart';
+import 'country_review/colombia_review.dart';
 
 class CountryPageDetails extends StatefulWidget {
   const CountryPageDetails({super.key});
@@ -27,8 +33,46 @@ class _CountryPageDetailsState extends State<CountryPageDetails> {
         itemBuilder: (context, index) {
           return Card(
             child: ListTile(
+              // Switch case navigates to countries review page
               onTap: () {
-                // TBD Add naviagtion
+                switch (index) {
+                  case 0:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ItalyReview()),
+                    );
+                  case 1:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const GreeceReview()),
+                    );
+                  case 2:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const JapanReview()),
+                    );
+                  case 3:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const MoroccoReview()),
+                    );
+                  case 4:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const SpainReview()),
+                    );
+                  case 5:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ColombiaReview()),
+                    );
+                }
               },
               title: Text(countryListDetails[index].country),
               leading: CircleAvatar(
