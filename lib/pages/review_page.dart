@@ -20,7 +20,7 @@ class _CountryPageDetailsState extends State<CountryPageDetails> {
     CountryListDetails(country: 'Greece', flag: 'greece.png'),
     CountryListDetails(country: 'Japan', flag: 'japan.png'),
     CountryListDetails(country: 'Morocco', flag: 'morocco.png'),
-    CountryListDetails(country: 'Spain', flag: 'spain.png'),
+    CountryListDetails(country: 'Spain (Canary Islands)', flag: 'spain.png'),
     CountryListDetails(country: 'Colombia', flag: 'colombia.png'),
   ];
 
@@ -33,7 +33,8 @@ class _CountryPageDetailsState extends State<CountryPageDetails> {
         itemBuilder: (context, index) {
           return Card(
             child: ListTile(
-              // Switch case navigates to countries review page
+              // Switch case navigates to each countries review page
+              // TBD update navigation so it does cover nav bar and app bar
               onTap: () {
                 switch (index) {
                   case 0:
