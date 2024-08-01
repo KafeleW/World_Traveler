@@ -15,7 +15,7 @@ class _GreeceReviewState extends State<GreeceReview> {
       body: Center(
         child: CachedNetworkImage(
           imageUrl:
-              "https://drive.google.com/uc?export=view&id=1Ec1yHpJE1Xr7IKyDXq0j_FmSosvjw40i",
+              "https://world-traveler-bucket.s3.us-east-2.amazonaws.com/greece_pic.jpg",
           progressIndicatorBuilder: (context, url, downloadProgress) =>
               CircularProgressIndicator(value: downloadProgress.progress),
           errorWidget: (context, url, error) => const Icon(Icons.error),
